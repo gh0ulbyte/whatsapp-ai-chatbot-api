@@ -10,10 +10,7 @@ def verify_meta_signature(
     signature_header: Optional[str],
     app_secret: str,
 ) -> bool:
-    """
-    Verifica el header X-Hub-Signature-256 (sha256=<hexdigest>) de Meta.
-    Si no hay app_secret configurado, se considera "no verificado".
-    """
+  
     if not app_secret:
         return True
 
