@@ -43,12 +43,7 @@ class WhatsAppClient:
         flow_action: str = "navigate",
         flow_action_payload: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
-        """
-        Envía un mensaje interactivo de tipo Flow.
-
-        Nota: el shape exacto puede variar según la configuración/versión.
-        Este payload es una base común para disparar Flows desde WhatsApp Cloud API.
-        """
+   
         interactive: Dict[str, Any] = {
             "type": "flow",
             "body": {"text": "Continuemos en el formulario."},
